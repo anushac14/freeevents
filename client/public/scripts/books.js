@@ -15,7 +15,7 @@ const renderBooks = async () => {
       topContainer.classList.add('top-container')
 
       const bottomContainer = document.createElement('div')
-      bottomContainer.classList.add('bottom-container')
+      bottomContainer.classList.add('bottom-container') 
 
       const title = document.createElement('h3')
       title.textContent = book.title
@@ -37,6 +37,12 @@ const renderBooks = async () => {
       summary.textContent = 'Summary: ' + book.summary
       bottomContainer.appendChild(summary)
 
+      const link = document.createElement('a')
+      link.textContent = 'Read More'
+      link.setAttribute('role', 'button')
+      link.href = `/books/${book.id}`
+      bottomContainer.appendChild(link)
+
       card.appendChild(topContainer)
       card.appendChild(bottomContainer)
       mainContent.appendChild(card)
@@ -49,3 +55,4 @@ const renderBooks = async () => {
 }
 
 renderBooks()
+
