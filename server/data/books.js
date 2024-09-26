@@ -1,5 +1,6 @@
 const bookData = [
     {
+        "id": 1,
         "title": "1984",
         "author": "George Orwell",
         "genre": "Dystopian",
@@ -7,6 +8,7 @@ const bookData = [
         "summary": "A dystopian novel set in a totalitarian regime that uses surveillance and propaganda to control its citizens."
     },
     {
+        "id": 2,
         "title": "To Kill a Mockingbird",
         "author": "Harper Lee",
         "genre": "Southern Gothic",
@@ -14,6 +16,7 @@ const bookData = [
         "summary": "A coming-of-age story that explores themes of racial injustice and moral growth in the American South."
     },
     {
+        "id": 3,
         "title": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
         "genre": "Tragedy",
@@ -21,6 +24,7 @@ const bookData = [
         "summary": "A critique of the American Dream set in the Jazz Age, centered around the mysterious Jay Gatsby."
     },
     {
+        "id": 4,
         "title": "Pride and Prejudice",
         "author": "Jane Austen",
         "genre": "Romantic Fiction",
@@ -28,6 +32,7 @@ const bookData = [
         "summary": "A romantic novel that deals with issues of class, marriage, and morality in early 19th century England."
     },
     {
+        "id": 5,
         "title": "Brave New World",
         "author": "Aldous Huxley",
         "genre": "Dystopian",

@@ -54,5 +54,14 @@ const renderBooks = async () => {
   }
 }
 
-renderBooks()
+const requestedUrl = window.location.href.split('/').pop()
+
+
+if (requestedUrl) {
+  window.location.href = '../404.html'
+
+}
+else {
+  renderBooks()
+}
 
