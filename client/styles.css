@@ -35,6 +35,13 @@
     padding-right:10px;
 }
 
+.header-logo {
+    width: 100px; 
+    height: auto; 
+    margin: 10px; 
+}
+
+
 .header-right button {
   background-color: white;
   border: solid;
@@ -152,4 +159,14 @@ main {
 
 .gift-details {
     width: 45vw;
+}
+
+.book-details {
+    background-color: #f9f9f9; 
+    border: 2px solid rgb(3, 7, 89);
+    border-radius: 8px; 
+    padding: 20px;
+    width: 90%; 
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

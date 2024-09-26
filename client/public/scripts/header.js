@@ -9,6 +9,7 @@ headerLeft.className = 'header-left'
 
 const headerLogo = document.createElement('img')
 headerLogo.src = '/logo.png'
+headerLogo.className = 'header-logo';
 
 const headerTitle = document.createElement('h1')
 headerTitle.textContent = 'Book Collection'
