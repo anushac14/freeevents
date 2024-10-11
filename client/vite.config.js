@@ -8,7 +8,7 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      '/books': {
+      '/events': {
         target: 'http://localhost:3001'
       }
     }

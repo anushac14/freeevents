@@ -1,10 +1,8 @@
 import express from 'express'
 import path from 'path'
-import BooksController from '../controllers/books.js'
+import BooksController from '../controllers/events.js'
 
 import { fileURLToPath } from 'url'
-
-import bookData from '../data/books.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -18,8 +16,8 @@ const router = express.Router()
 
 router.get('/', BooksController.getBooks);
 
-router.get('/:bookId', (req, res) => {
-    res.status(200).sendFile(path.resolve(__dirname, '../public/book.html'))
+router.get('/:eventId', (req, res) => {
+    res.status(200).sendFile(path.resolve(__dirname, '../public/event.html'))
 })
 
 export default router
