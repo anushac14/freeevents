@@ -1,15 +1,13 @@
-// vite.config.js
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  build: {
-    outDir: '../server/public',
-    emptyOutDir: true
-  },
+  plugins: [react()],
   server: {
     proxy: {
       '/events': {
-        target: 'http://localhost:3001'
+        target: 'http://localhost:3001', // Your backend server
+        changeOrigin: true,
       }
     }
   }
