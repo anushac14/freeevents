@@ -22,13 +22,14 @@
     margin: 0;
 }
 
-.location-list {
+/* Updated styling for the location grid */
+.location-grid {
     width: 100%;
     max-width: 1200px;
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between cards */
 }
 
 .location-card {
@@ -36,9 +37,11 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     display: flex;
+    flex-direction: column; /* Stack elements vertically */
     justify-content: space-between;
     align-items: center;
     transition: box-shadow 0.3s;
+    text-align: center; /* Center align text */
 }
 
 .location-card:hover {

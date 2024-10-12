@@ -6,16 +6,14 @@ const Locations = ({ data }) => {
   return (
     <div className="locations">
       <h1>Locations</h1>
-      <ul className="location-list"> {/* Add the class name for styling */}
+      <div className="location-grid"> {/* Change from ul to a div for a grid layout */}
         {data.map(location => (
-          <li key={location.id}>
-            <div className="location-card"> {/* Use a card for each location */}
-              <h3>{location.name}</h3>
-              <Link to={`/locations/${location.id}`}>View Events</Link>
-            </div>
-          </li>
+          <div key={location.id} className="location-card"> {/* Use a card for each location */}
+            <h3>{location.name}</h3>
+            <Link to={`/locations/${location.id}`}>View Events</Link>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

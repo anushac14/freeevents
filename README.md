@@ -33,7 +33,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-https://imgur.com/a/ZY959Op
+https://imgur.com/a/gXIt62t
 
 
 <!-- Replace this with whatever GIF tool you used! -->
