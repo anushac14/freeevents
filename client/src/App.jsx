@@ -1,33 +1,53 @@
 import React, { useState, useEffect } from 'react';
-import { useRoutes } from 'react-router-dom';
+import { useRoutes, Link } from 'react-router-dom';
 import Events from './pages/Events';
 import EventDetails from './pages/EventDetails';
+import Locations from './pages/Locations';
+import LocationEvents from './pages/LocationEvents';
 import PageNotFound from './pages/PageNotFound';
-import { Link } from 'react-router-dom';
+import Home from './pages/Home';
 
 const App = () => {
-  
   const [events, setEvents] = useState([]);
+  const [locations, setLocations] = useState([]);
 
   useEffect(() => {
-    const fetchEvents = async () => { 
-      const response = await fetch('/events'); 
-      const data = await response.json(); 
+    const fetchEvents = async () => {
+      const response = await fetch('/events');
+      const data = await response.json();
       setEvents(data);
-      console.log(response)
+    };
+
+    const fetchLocations = async () => {
+      const response = await fetch('/locations');
+      const data = await response.json();
+      setLocations(data);
     };
 
     fetchEvents();
+    fetchLocations();
   }, []);
 
   let element = useRoutes([
     {
       path: "/",
-      element: <Events data={events} /> 
+      element: <Home /> // Page with 2 buttons
     },
     {
-      path: "/event/:id", 
-      element: <EventDetails data={events} /> 
+      path: "/events",
+      element: <Events data={events} /> // Shows all events
+    },
+    {
+      path: "/event/:id",
+      element: <EventDetails data={events} /> // Event details
+    },
+    {
+      path: "/locations",
+      element: <Locations data={locations} /> // Shows all locations
+    },
+    {
+      path: "/locations/:id",
+      element: <LocationEvents /> // Shows events filtered by location
     },
     {
       path: "/*",
@@ -35,11 +55,11 @@ const App = () => {
     }
   ]);
 
-  return ( 
+  return (
     <div className="App">
       <header>
         <div className="header-container">
-         
+          <Link to="/">Home</Link>
         </div>
       </header>
       {element}

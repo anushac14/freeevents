@@ -1,0 +1,41 @@
+.location-events {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-events h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.noResults {
+    font-size: 1.5rem;
+    color: #666;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+    main {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; 
+    }
+}

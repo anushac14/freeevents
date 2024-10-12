@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
@@ -8,7 +8,11 @@ export default defineConfig({
       '/events': {
         target: 'http://localhost:3001', // Your backend server
         changeOrigin: true,
+      },
+      '/locations': {
+        target: 'http://localhost:3001', // Proxy for locations
+        changeOrigin: true,
       }
     }
   }
-})
+});

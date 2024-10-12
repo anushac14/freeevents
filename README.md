@@ -1,24 +1,29 @@
-# WEB103 Project 2 - BooksToRead
+# WEB103 Project 3 - EventHive
 
 Submitted by: Anusha Chinthamaduka
 
-About this web app: Web application to track the books on your reading list
+About this web app: Helps find free events in your area
 
-Time spent: 2 hours
+Time spent: 6 hours
 
 ## Required Features
 
 The following **required** functionality is completed:
 
 <!-- Make sure to check off completed functionality below -->
-- [x] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
-- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured database table for the list items**
-- [x] **The PostgreSQL database includes a table that matches the data displayed in the web app**
-  - [x] **NOTE: Your GIF or a screenshot added to the README must include a view of your Railway database that shows the contents of the table used by your app**
+
+- [x] **The web app uses React to display data from the API**
+- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured Events table**
+  - [x] **NOTE: Your GIF or a screenshot added to this README must include a view of your Railway database that shows the contents of the table used by your app**
+- [x] **The web app displays the title of the app**
+- [x] **A visual interface allows the user to select a Location they would like to view**
+- [x] **Clicking on a Location shows a list of all items from the Events table that corresponds to that Location**
+- [x] **Each Location detail page should have its own unique URL**
 
 The following **optional** features are implemented:
 
-- [ ] The user can search for items with a specific attribute
+- [x] An additional page shows all possible `Events` that the user can sort and filter by `Location`
+- [ ] `Events` display a countdown showing the time remaining before that event and appears with different formatting when the event has passed
 
 The following **additional** features are implemented:
 
@@ -28,7 +33,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='https://imgur.com/a/FIQ9G05' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/ZY959Op' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  GIF tool here
@@ -43,7 +48,7 @@ Describe any challenges encountered while building the app or any additional con
 
 ## License
 
-Copyright [2024] [name of copyright owner]
+Copyright 2024 Anusha Chinthamaduka
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
